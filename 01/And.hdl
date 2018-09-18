@@ -14,8 +14,8 @@ CHIP And {
     OUT out;
 
     PARTS:
-    // Boolean Formula
-    // x AND y = (x NAND y) NAND (x NAND y)
-    Nand(a=a,b=b,out=c);
-	Nand(a=c,b=c,out=out);
+	    // Boolean Formula
+	    // x AND y = (x NAND y) NAND (x NAND y)
+	    Nand(a=a,b=b,out=c);
+		Nand(a=c,b=c,out=out);
 }

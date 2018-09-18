@@ -14,11 +14,10 @@ CHIP Or {
     OUT out;
 
     PARTS:
-    // Boolean Formula
-    // x OR y = (x NAND x) NAND (y NAND y)
-    
-	Nand(a=a,b=a,out=c);
-	Nand(a=b,b=b,out=d);
-	Nand(a=c,b=d,out=out);
-  
+	    // Boolean Formula
+	    // x OR y = (x NAND x) NAND (y NAND y)
+		Nand(a=a,b=a,out=c);
+		Nand(a=b,b=b,out=d);
+		Nand(a=c,b=d,out=out);
+	  
 }
